@@ -3,8 +3,7 @@ const modal = () => {
     const modal = document.querySelector('.popup')
     const closeBtn = modal.querySelector('.popup-close')
 
-    const screenWidth = screen.width
-    console.log(screen);
+    let screenWidth = screen.width
     
     let count = 0;
     let idAnimation;
