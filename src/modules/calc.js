@@ -30,7 +30,7 @@ const calc = (price = 150) => {
             totalValue = 0
         }
 
-        total.textContent = totalValue
+        total.textContent = Math.round(totalValue)
     }
 
     calcBlock.addEventListener('input', (e) => {
