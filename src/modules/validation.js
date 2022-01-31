@@ -29,12 +29,12 @@ const validation = () => {
 
     formPhones.forEach((formPhone) => {
         formPhone.addEventListener('input', (e) => {
-            e.target.value = e.target.value.replace(/[^0-9\(\)\-]/, "")
+            e.target.value = e.target.value.replace(/[^0-9\(\)\-\+]/, "")
         })
     })
 
     formMess.addEventListener('input', (e) => {
-        e.target.value = e.target.value.replace(/[^а-яА-я\-\ ]/, "")
+        e.target.value = e.target.value.replace(/[^а-яА-я\-\ \0-9\,\!\?\:\;\.]/, "")
     })
     
     calcArray.forEach((input) => {

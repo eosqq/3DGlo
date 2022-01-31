@@ -7,7 +7,7 @@ import slider from './modules/slider'
 import calc from './modules/calc'
 import sendForm from './modules/sendForm'
 
-timer('28 january 2022')
+timer('5 februaly 2022')
 menu()
 modal()
 validation()
@@ -16,6 +16,26 @@ slider()
 calc(100)
 sendForm({
     formId: 'form1',
+    someElem: [
+        {
+            type: 'block',
+            id: 'total'
+        }
+    ]
+},
+
+)
+sendForm({
+    formId: 'form2',
+    someElem: [
+        {
+            type: 'block',
+            id: 'total'
+        }
+    ]
+})
+sendForm({
+    formId: 'form3',
     someElem: [
         {
             type: 'block',
