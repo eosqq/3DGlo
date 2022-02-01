@@ -64,7 +64,6 @@ const sendForm = ({ formId, someElem = [] }) => {
             const element = document.getElementById(elem.id);
   
             if (elem.type === "block") {
-                console.log(elem);
                 formBody[elem.id] = element.textContent;
             } else if (elem.type === "input") {
                 formBody[elem.id] = element.value;
