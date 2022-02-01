@@ -98,6 +98,7 @@ const sendForm = ({ formId, someElem = [] }) => {
                 });
         } else {
             alert("Данные не валидны!");
+            statusBlock.textContent = ''
         }
     };
   
